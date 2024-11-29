@@ -34,7 +34,8 @@
   };
 </script>
 
-<main>
+<main >
+  <h1 class="text-center text-2xl font-bold mb-4">TODO App using Svelte</h1>
   <TaskForm {addTask} />
 
   {#if tasks.length > 0}
@@ -69,7 +70,8 @@
 
 <style>
   main {
-    margin: 1rem;
+    padding-top: 3rem;
+    margin: auto;
     max-width: 800px;
   }
 
