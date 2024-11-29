@@ -13,7 +13,6 @@
     filteredTasks.reduce((acc, task) => acc + Number(task.done), 0)
   );
   const addTask = (newTask: string) => {
-    console.log(newTask);
     tasks.push({
       id: crypto.randomUUID(),
       title: newTask,
@@ -31,7 +30,6 @@
 
   const editTask = (editingTask: Task) => {
     const findIndex = tasks.findIndex((task) => task.id === editingTask.id);
-    console.log(editingTask === tasks[findIndex]);
     tasks[findIndex].title = editingTask.title;
   };
 </script>
