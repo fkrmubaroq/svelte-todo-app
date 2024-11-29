@@ -4,7 +4,10 @@
 
   const onSubmit = (event: Event) => {
     event.preventDefault();
-    console.log(newTask);
+    if (!newTask) {
+      alert("Task cannot be empty");
+      return;
+    }
     addTask(newTask);
     newTask = "";
   };
@@ -19,6 +22,9 @@
 </form>
 
 <style>
+  form {
+    margin-bottom: 1rem;
+  }
   input {
     width: 100%;
     border: 1px solid #ddd;
