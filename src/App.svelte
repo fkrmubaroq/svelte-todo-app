@@ -65,7 +65,6 @@
     {editTask}
   />
 
-  <pre>{JSON.stringify(tasks, null, 2)}</pre>
 </main>
 
 <style>
